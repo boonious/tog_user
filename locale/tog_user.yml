@@ -57,11 +57,11 @@ en:
       send_private_message: Send private message
     sessions:
       email: Email
-      login: Login
+      login: Username
       new: Login
       password: Password
       remember_me: Remember me
-      password_forgotten: If you've forgotten your password, we can
+      password_forgotten: Forgot password?
       email_you: email it to you
       login_failure: Incorrect username or password.
       login_success: Logged in successfully.

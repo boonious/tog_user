@@ -49,9 +49,9 @@ en:
       password_reset_not_found: The {{email}} doesn''t have an account in this system
       forgot_password: Forgot your password?
       forgot_password_help: After sending this form, you will receive an email with instructions for reseting your password.
-      already_registered: Already Registered?
+      already_registered: (registered user)
       signup_title: Signup
-      click_to_login: Click here to login
+      click_to_login: Login
       type_two_words: Type the two words
     search:
       send_private_message: Send private message

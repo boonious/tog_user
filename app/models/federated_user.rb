@@ -14,7 +14,8 @@ class FederatedUser < User
   def self.custom_login(credentials, service)
     login = case service
     when :twitter 
-      credentials["screen_name"] + "@" + service.to_s 
+      # Use twitter screen name as local username/login. If the login has already been used, use 'screen_name@twitter' instead
+      User.exists?(:login => credentials["screen_name"]) ? credentials["screen_name"] + "@" + service.to_s : credentials["screen_name"]
     when :facebook
       # example of other service provider - forthcoming
     end 

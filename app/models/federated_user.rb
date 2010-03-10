@@ -1,6 +1,8 @@
 class FederatedUser < User
   attr_accessible :service_provider
   after_create :update_profile 
+  
+  has_many :consumer_tokens, :dependent => :destroy, :foreign_key => :user_id
    
   # credentials - user profile data fetched during federated login process
   def initialize(credentials, attributes = {})
